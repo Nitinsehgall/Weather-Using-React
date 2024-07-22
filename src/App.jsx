@@ -30,10 +30,13 @@ function App() {
       sunrise:data?.sys?.sunrise,
       sunset:data?.sys?.sunset,
       main:data?.weather?.[0]?.main,
-      message:data?.message
+      message:data?.message,
+      cod: data?.cod,
+       
+    
     });
   }catch(err){
-    console.log(err);
+    // console.log(err);  
 }
 
 console.log(weatherData,'weather');
@@ -57,9 +60,10 @@ console.log(weatherData,'weather');
   };
   console.log(searchValue);
   console.log(weatherData.message);
+  console.log(weatherData.cod,'cod');
 
   return (
-    <div>
+    <div className="h-screen">
       <Weather
         temp={degree}
         description={weatherData.description}
@@ -69,6 +73,7 @@ console.log(weatherData,'weather');
         windSpeed={speed}
         sunrise={sunrise}
         main={weatherData.main}
+        cod={weatherData.cod}
       />
     </div>
   );
