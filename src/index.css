@@ -3,4 +3,35 @@
 @tailwind utilities;
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
+ font-size: large;
+  background-image: url('https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg?cs=srgb&dl=pexels-pixabay-314726.jpg&fm=jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+ 
+}
+
+
+.bgImage{
+  /* background-size: contain; */
+ 
+  /* background-size: cover; */
+ 
+}
+
+
+
+.weatherDiv{
+  backdrop-filter: blur(20px);
+}
+.sider{
+  background-color: transparent;
+  /* height: 100vh; */
+  backdrop-filter: blur(20px);
+}
+
+.logo{
+  backdrop-filter: blur(20px);
+  background-color: red;
 }

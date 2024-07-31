@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Weather from "./Weather";
 import './App.css'
+import Sider from "./Sider";
+import Calendar from "./Calendar";
+
 
 function App() {
   const [weatherData, setWeatherData] = useState([]);
@@ -63,7 +66,8 @@ console.log(weatherData,'weather');
   console.log(weatherData.cod,'cod');
 
   return (
-    <div className="h-screen">
+    <div className="flex w-screen">
+
       <Weather
         temp={degree}
         description={weatherData.description}
@@ -74,7 +78,10 @@ console.log(weatherData,'weather');
         sunrise={sunrise}
         main={weatherData.main}
         cod={weatherData.cod}
-      />
+        />
+      
+        {/* <Sider/> */}
+        
     </div>
   );
 }
