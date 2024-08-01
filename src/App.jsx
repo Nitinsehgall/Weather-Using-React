@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Weather from "./Weather";
 import './App.css'
-import Sider from "./Sider";
+// import Sider from "./Sider";
 import Calendar from "./Calendar";
 
 
